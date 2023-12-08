@@ -2,14 +2,16 @@ import React from 'react'
 
 const TodoItem = ({ todo, onRemove }) => {
   return (
-    <li className='text-white w-full justify-around flex mt-5 gap-5 items-start'>
-      <h1 className='bg-yellow-500 p-1 text-md rounded-md'>{todo.text}</h1>
+    <li className='w-full justify-start flex break-words border-b border-gray-600 pb-2 mt-5 gap-5 items-center'>
       <button
-        className='ml-5 bg-red-500 rounded-md p-1'
+        className='bg-blue-500 rounded-full p-1 text-center w-[30px]'
         onClick={() => onRemove(todo.id)}
       >
-        Remove
+        X
       </button>
+      <h1 className={`text-gray-500 p-1 text-md rounded-md text-start w-[600px] `}>
+        {todo.text}
+      </h1>
     </li>
   )
 }

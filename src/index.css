@@ -9,3 +9,12 @@ body {
     rgb(18, 0, 43) 101.8%
   );
 }
+
+.dark {
+  background-color: #000000;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #000000;
+}
